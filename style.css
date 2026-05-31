@@ -6,8 +6,9 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: #d866a1;
+    background-color: pink;
     background-image: radial-gradient(circle at top, #f7f0ff 0%, #ffffff 70%);
+    
 }
 
 .bg-image {
