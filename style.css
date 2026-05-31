@@ -4,7 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at top, #f7f0ff 0%, #ffffff 70%);
+    background-color: #d866a1;
+    background-image: url("picure/pinterest-1.jpg"), radial-gradient(circle at top, #f7f0ff 0%, #ffffff 70%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: contain, cover;
 }
 
 h1 {
