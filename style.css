@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #f7f0ff 0%, #ffffff 70%);
+}
+
+h1 {
+    color: rgb(96, 40, 148);
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 60px;
+    animation: dance 1.5s ease-in-out infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: default;
+    top: -15px;
+}
+
+
+h1:hover {
+    transform: translateY(-12px) rotate(-2deg) scale(1.05);
+    color: rgb(135, 50, 205);
+}
+
+@keyframes dance {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translateY(-10px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translateY(8px) rotate(3deg);
+    }
+
+    60% {
+        transform: translateY(-6px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translateY(4px) rotate(2deg);
+    }
+}
+
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.henny-penny-bold {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
