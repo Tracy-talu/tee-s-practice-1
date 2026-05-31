@@ -4,11 +4,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
     background-color: #d866a1;
-    background-image: url("picure/pinterest-1.jpg"), radial-gradient(circle at top, #f7f0ff 0%, #ffffff 70%);
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
-    background-size: contain, cover;
+    background-image: radial-gradient(circle at top, #f7f0ff 0%, #ffffff 70%);
+}
+
+.bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
 
 h1 {
